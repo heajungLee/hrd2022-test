@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+html,body{
+    margin:0; 
+    font-size:18px;
+}
+ul,li{
+    list-style-type: none;
+    margin:0; padding:0;
+}
+img{vertical-align: middle;}
+h1,h2,h3,h4,h5,h6,p,figure{ margin:0; }
+
+*{
+    box-sizing: border-box;
+    color:rgb(37, 18, 18);
+}
+h2{
+    color:#222; font-size:3rem;
+}
+h3{color:#222; font-size:1.4rem;}
+
+// ::after{ content:'' }
+
+// 헤더, 풋터
+$wid : 1300px;
+$c-point : #fed136;
+$c-white : #fff;
+
+header{
+    
+    position:absolute;
+    left:0; top:0;
+    z-index:10;
+    width:100%;
+    padding:20px 0;
+    div{
+        width:$wid; margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            a{color:$c-point;}
+        }
+        nav{
+            a{color:$c-white; padding:0 30px;}
+        }
+    }
+}
+
+
+.visual{
+    > figure{
+        position:relative;
+        img{width:100%;}
+        figcaption{
+            position:absolute;
+            left:0; top:0;
+            color:#fff;
+            width:100%; height:100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size:5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+@media (max-width:767px){
+    $wid : 100%;
+    $c-point : #fed136;
+    $c-white : #fff;
+
+    header{    
+        position:absolute;
+        left:0; top:0;
+        z-index:10;
+        width:100%;
+        padding:20px 0;
+        div{
+            width:$wid; margin:0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+    
+            h1{
+                a{color:$c-point;}
+            }
+            nav{
+                display:none;
+                a{color:$c-white; padding:0 30px;}
+            }
+        }
+    }
+}
+
+
+// 버튼, 인풋, 테이블, 라벨, 아이콘...
+// 사이즈, 여백

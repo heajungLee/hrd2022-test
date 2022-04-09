@@ -1,0 +1,67 @@
+@import "_common";
+
+
+
+@media (min-width:768px) {
+    .work{
+        text-align:center;
+        background-color: #f7f7f7;
+        padding:150px 0;
+        > h2{}
+        > p{}
+        > ul{
+            width:$wid; margin:60px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                margin-bottom:3.5%;
+                width:31%;
+                > figure{
+                    > img{width:100%;}
+                    > figcaption{
+                        padding:10% 0;
+                        background-color: $c-white;
+                        > b{}
+                        > p{}
+                    }
+                    
+                }
+            }
+        }    
+        
+    }
+}
+
+@media (max-width:767px){
+    $wid : 100%;
+    .work{
+        text-align:center;
+        background-color: #f7f7f7;
+        padding:150px 0;
+        > h2{}
+        > p{}
+        > ul{
+            width:$wid; margin:60px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                margin-bottom:3.5%;
+                width:100%;
+                > figure{
+                    > img{width:100%;}
+                    > figcaption{
+                        padding:10% 0;
+                        background-color: $c-white;
+                        > b{}
+                        > p{}
+                    }
+                    
+                }
+            }
+        }    
+        
+    }
+
+}
